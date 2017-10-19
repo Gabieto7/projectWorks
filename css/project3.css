@@ -1,0 +1,70 @@
+body{
+	margin: 0px; padding: 0px; background-color: #fffafa;
+}
+
+/*The header image section*/
+.the_header{ margin: 5px 0px; }
+#selector{margin-left: 898px; height: 30px; width: 155px; margin-top: 1px;
+	position: absolute;
+}
+
+/*The Navigation link section*/
+.the_navigation ul{
+	background-color: #00008b;
+	min-width: 100%;
+	margin: 0px; padding: 0px;/*for the padding only stretches the background*/
+	overflow: hidden; text-indent: 50px;
+	margin-bottom: 20px;
+}
+.the_navigation ul li{
+	float: left;/*use float to get block elements to slide next to each other*/
+	list-style: none; border-right: 1.5px solid #bbb; text-align: center;
+	}
+.the_navigation ul li a{
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 20px;/*this enables the hover anchor links color to fit/fill in the background
+     and donot apply margin to the li bcos it will adjust the filling positiong of the background*/
+    text-decoration: none; 
+    display: block;}/*Displaying the links (anchor tag) as block elements makes the whole link area clickable 
+(not just the text), and it allows us to specify padding (for height, width, margins, etc. if you want)*/
+.the_navigation li a:hover:not(#active){
+	background-color: #F94A4D; }
+#active{
+	background-color: #4CAF50;}
+
+/*The main/content page section*/	
+
+.container{width: 100%; overflow: hidden;}
+.content{overflow: hidden; width: 1000px; margin: 30px 20px;}
+.main p{ border: 3px solid blue;  line-height: 50px; margin: 5px;}
+.main section{margin: 15px;}
+
+	/*aside bar*/
+.sidebar{position: absolute; top: 190px; left: 1099px; background-color: red; width: 250px; min-height: 912px; overflow: hidden;
+	animation: myeffect 3s ease-in-out 0s infinite normal forwards running;}
+@keyframes myeffect{
+	0%{background: -moz-linear-gradient(#ff4500,#ff0000) -o-linear-gradient(#ff4500,#ff0000) -webkit-linear-gradient(#ff4500,#ff0000);}
+	10%,
+	25%{background: -moz-linear-gradient(#ff4500,#1e90ff);}
+	70%, 100%{background: -moz-radial-gradient(#0000ff,#ff0000);}
+}
+#Follow_us:not(#text){float: right; display: grid;  margin: 30px 100px; overflow: hidden; line-height: 80px;}
+#text{font-size: 30px; font-family: cursive verdana helvetica; width: 200px; color: #ffffff; margin: 30px;}
+@media (max-width: 600px) {
+ 	.sidebar, .content .main{
+        width: 100%;
+    }
+}
+
+
+/*the footer section*/
+.foot{ display: inline-block; color: #ffffff; z-index: 7;
+ border: 5px groove orangered; border-radius: 60px; background-color: green; width: 99%;}
+.foot_position{margin: 20px 70px;}
+#find_career{width: 550px; background-color: purple;}
+#online_site{width: 550px; background-color: yellow; margin-left: 200px;}
+#payments{ width: 550px; background-color: brown; margin-left: 400px;}
+#connect{width: 550px;  background-color: darkblue; margin-left: 600px;} 
+
+

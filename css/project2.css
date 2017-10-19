@@ -1,0 +1,85 @@
+html, body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+font-size: 13px;
+background: -moz-linear-gradient(turquoise 40%,black 40%, black 30%, cyan 60%); }
+
+/*The header image section*/
+.the_header{ margin: 5px 0px; background: linear-gradient(45deg, #a52a2a,transparent,#a52a2a);}
+.login_user{margin-left: 680px; height: 30px; width: 155px; margin-top: 1px; display: inline;
+}
+
+/*content_page container field*/
+
+    /*The Nav sidebar section*/
+.sidebar{float: left; background-color: #000000;  position: fixed; width: 150px; font-family: verdana;}
+.sidebar ul {
+    list-style-type: none; margin: 0; padding: 0; width: 200px; 
+    background-color: #000000; border: 1px solid #555;
+}
+.sidebar li a {
+    display: block; color: #ffffff; padding: 8px 16px; text-decoration: none;
+}
+.sidebar li {
+    text-align: center; border-bottom: 2px double #ffffff; line-height: 40px;
+}
+.sidebar li:last-child {
+    border-bottom: none;
+}
+.sidebar li a.active {
+    background-color: #4CAF50; color: white;
+}
+.sidebar li a:hover:not(.active) {
+    background-color: #00ffff; color: white;
+}
+
+/*the main web page contents*/
+
+.container{
+    margin: 30px 0px;
+}
+
+/*The form section*/
+
+#label{display: inline-block; width: 200px;}
+.form_container{ background: -moz-linear-gradient(to top, #00ffff, #0000ff); color: #000000; max-width: 700px; 
+    margin-left: 220px; border: 2px solid #000000; border-top-right-radius: 20px; border-top-left-radius: 20px; 
+    font-size: 17px; font-weight: bold; font-family: monospace; line-height: 40px;}
+.form_container h2{text-align: center; font-style: oblique;}
+    .first_form{margin-left: 20px;}
+
+.second_form{float: right; background-color: #0000000; background: rgba(0,10,15,0.8); width: 290px; margin-top: -1625px; 
+    min-height: 650px; display: inline-grid;}
+.second_form aside a{
+    text-decoration: none;
+    color: darkgray;            /*changes the color of the text in the anchor tag to white*/
+    margin-right: 30px;     /*moves the text in the anchor tag towards the LHS (off RHS on the website page)*/
+}
+.second_form aside li{
+    line-height: 30px; /*defines the vertical line spacing between the lists and its other properties*/
+    width: 250px;
+    font-size: 15px;
+}
+.second_form aside ul{
+    padding-left: 25px;
+    padding-right: 50px;
+}
+.tablebody{
+    color: white;
+    margin-top: 60px;
+}
+
+/*The footer section*/
+
+.foot-page{background-color: #a52a2a; color: #ffffff; margin-top: 500px; width: 100%; position: relative; 
+	height: 370px; overflow: hidden;}
+.foot-page footer{font-size: 25; font-weight: bold; font-family: sans-serif; line-height: 30px; }
+#first{position: absolute; left: 365px;}
+#second{position: absolute; left: 955px;}
+#third{position: absolute; left: 1160px;}
+#fourth{position: absolute; top: 275px;}
+.foot-page a{text-decoration: none; font-stretch: 30px;
+	animation: myeffect 3s ease-out 0s infinite normal forwards running;}
+@keyframes myeffect{
+	0%{font-size: 0px; color: #0000ff;}
+	25%{font-size: 15px;}
+	60%, 100%{font-size: 20px; color: powderblue;}
+}

@@ -1,0 +1,12 @@
+"intro":
+{To disable the UAC, use the program "msconfig" typed in your cmd. In "msconfig" go to "Tools", 
+select "disable user account control" and verify your selection. 
+Now you must restart Windows. At the same time, you can enable the UAC again.
+/*SETTING A ROOT PASSWORD*/
+Configure it with the "XAMPP Shell" (command prompt). Open the shell from the XAMPP control pane and execute this command:},
+
+{# mysqladmin.exe -u root password secret},
+
+{username = Gabriel7
+password = blessing@7.
+Password Gabieto4478@. 'config'}

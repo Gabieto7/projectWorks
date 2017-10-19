@@ -1,0 +1,244 @@
+html, body {
+	height: 100%;/* This properties will reset some default values of the Html and body section of the web browser page*/
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+}
+.navigation{
+	background-image: url("images/header.jpg");
+	overflow: hidden;
+	background-size: 1000px 800px;
+	overflow: hidden;
+}
+#box{
+	height: 110px; width: 900px;
+	margin: auto;
+	margin: 50px 200px;
+}
+.the_navigation ul{ list-style-type: none; background-image: url("../img/header.jpg");
+    list-style-type: none; margin: 0; padding: 0; overflow: hidden;
+}
+
+.navigation li {
+    float: left; 
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    font-size: 23px; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none; position: absolute; background-color: #f9f9f9;
+    min-width: 160px; z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
+}
+.dropdown-content a {color: #adff2f; padding: 14px 16px; text-decoration: none; display: block; text-align: center;
+}/*Displaying the links (anchor tag) as block elements makes the whole link area clickable (not just the text), and 
+it allows to specify padding (and height, width, margins, etc.  padding: 12px 16px; */
+.dropdown-content a:hover {background-color: #000000;}
+.dropdown:hover .dropdown-content {display: grid;}
+#active{background-color: #000000;}
+
+/*the content slider section*/
+
+.container{
+	width: 95%;
+	height: 450px;
+	margin: 10px auto;
+	border: 2px solid darkblue;
+	position: relative;
+	overflow: hidden;
+}
+.container img{
+	width: 100%;
+	height: 100%; /*100% is assigned, in order for the pictures to fit in completely into the div container width and height 
+	and not the body tag,,,,since it's positioning is relative to the div tag .container*/
+	position: absolute; /*it will make all images to appear or positioned at one spot on the browsers page*/
+}
+.container .btn{
+	position: absolute;
+	height: 60px; width: 60px;
+	border-radius: 30px; border: none;
+	background-color: black;
+	top: 35%;
+	color: white;
+	font-size: 30px;
+}
+#btn2{
+	float: right;
+	position: relative; /*relative position is assigned bcos d class that contains it is absolute to another(.container)
+	that is two html5 selectrs cannot be absolute in the same container tag relating to another tag*/
+}
+#btn2:hover{
+	box-shadow: 5px 10px 0px 0px black;
+}
+#btn1{
+	border: 
+}
+#btn1:hover{
+	box-shadow: 0px 10px 5px 0px black;
+}
+
+@keyframes happen{
+	from{background: deepskyblue;}
+	to{background: blue;}
+	}
+#showmore{
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	width: 300px;
+	font-size: 24px;
+	padding: 10px;
+	margin: 20px auto;
+	display: block;
+	animation: happen 5s ease-in-out 0s infinite normal forwards running; 
+}
+#content{
+	width: 460px;
+	background: #fff;
+	padding: 20px;
+	padding-top: 0;
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #444;
+	margin: 0 auto;
+	max-height: 200px;
+	overflow: hidden;
+	 /* This shrinks or hides some of the text from displaying on the webpage to a maximum height of 270px */
+	/* setting the transition up*/
+}
+ .open{
+	max-height: 2000px;
+	transition: max-height 0.7s;
+	-webkit-transition: max-height 0.7s;
+	display: all;
+}
+.texts{
+	text-align: center;
+	font-family:  cursive;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	justify-content: center;
+}
+
+/*the box transition section*/
+#line{ width: 1350px; border:3px solid blue;}
+.box{
+	width: 500px;
+	height: 300px;
+	display: block;
+	border: 7px solid maroon;
+	background: yellow;
+	margin-top: 100px;
+	margin-left: 400px;
+	position: absolute;
+	z-index: -2; /*the element with the larger z-index value will overlap the other element, Zindex only applies to element 
+	which are positioned of value fixed relative or absolute but u cant use zindex to ovelap a child of parent element on
+	another porent tag or element instead u use different divs/container*/
+}
+.transbox{
+	position: absolute;
+	width: 501px;
+	height: 300px;
+	/*pointer-events: none; prevents the object class 'transbox' from responding to the hover or click effect*/
+	background-color: turquoise;
+	display: block;
+	margin-top: 107px;
+	margin-left: 407px;
+	-webkit-transition: transform 3000ms ease-in-out 0.5s;
+	transition: transform 3000ms ease-in-out 0.5s;
+}
+.transbox:hover{
+	-webkit-transform: translateX(501px);
+	 transform: translateX(501px);
+}
+#instruct{text-align: center; font-size: 25px; font-family: monospace; font-weight: bold;}
+
+/*animation box section*/
+.flip3d{
+	height: 500px; width: 310px;
+	margin: 500px 20px 20px 0px;
+	float: right;
+}
+.flip3d > .firstbox{
+	background-color: lightblue;
+	height: 500px; width: 310px;
+	transform: perspective(600px) rotateY(0deg);/*PERSPECTIVE shows d view or appearance of depth in objects or the technique of 
+	representing a 3D object on a 2D surface*/
+	position: absolute;
+	-webkit-transition: transform 1s linear 0s; border-radius: 7px;
+	transition: transform 1s linear 0s; border-radius: 7px;
+}
+.flip3d > .secondbox{
+	background-color: green;
+	height: 500px; width: 310px;
+	transform: perspective(600px) rotateY(180deg);
+	position: absolute;
+	-webkit-backface-visibility: hidden;/*The BACKFACE-VISIBILITY IS USED so that u can't see the back side of the element the secondbox 
+	contains as they are flipped or turning around but only see the appropraite side as it is spinning*/ 
+	backface-visibility: hidden;
+	transition: transform 1s linear 0s; border-radius: 7px;
+    -webkit-transition: transform 1s linear 0s; border-radius: 7px;
+}
+.flip3d:hover > .firstbox{
+	-webkit-transform: perspective(600px) rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
+}
+.flip3d:hover > .secondbox{
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+}
+
+/*the footer section page*/
+.foot{
+	clear: both; /* the "clear both" triggers the browser to clear all floats above the footer to enable the footer contain its 
+	position*/
+	height: 300px;
+	background-color: #00bbbb;
+	padding: 10px 0px; overflow: hidden;
+}
+.foot footer p, .foot footer a{
+	clear: both; /* the "clear both" triggers the browser to clear all floats above the footer to enable the footer contain its 
+	position*/	
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-stretch: extra-expanded;
+	font-family: cursive;
+	background-color: navy;
+}
+.foot #faceb, .foot #twit, .foot #linke{
+	background-color: #0000ff;
+	margin-top: 30px;
+	opacity: 1;
+	position: relative;
+	/*transition: opacity 350s ease-out 1s;*/
+	animation: mover 50s ease-out 1s infinite normal forwards running;
+	z-index: 5;
+}
+@keyframes mover{
+	from{transform: translateX(0px);}
+	to{transform: translateX(1000px);}
+}
+.foot span h3{
+	opacity: 0.6;
+	text-align: center;
+	font-family: cursive arial; /*monospace is a good font choice when embeddding code, arial, sans-serif, cursive is a fancy fonts */
+	font-size: 40px;
+	color: #000000;
+	text-shadow: 5px -1px 0px #ffffff;/*format = (X-offset; Y-offset; how much blur; the color of the shadow; )*/
+	position: absolute;
+	padding-right: 50px;
+	z-index: 20; /*the text coming on top of the image icons*/
+}
